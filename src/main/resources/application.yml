@@ -1,0 +1,13 @@
+server:
+  port: 9966
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/basicweb?serverTimezone=Asia/Shanghai
+    #url: jdbc:mysql://172.18.0.2:3306/basicweb?serverTimezone=Asia/Shanghai
+    #url: jdbc:mysql://111.229.178.141:3306/basicweb?serverTimezone=Asia/Shanghai
+    username: root
+    password: XXXXXX
