@@ -37,13 +37,13 @@ public class StrUtil {
 
     /**
      * 检查密码格式是否合法
-     * 密码长度为6-16位，可以由字母、数字、@#$%^&*()_+-=.组成
+     * 密码长度为6-30位，可以由字母、数字、@#$%^&*()_+-=.组成
      */
     public static boolean checkPwdFormat(String password) {
         if (password.isEmpty()) {
             return false;
         }
-        Pattern regex = Pattern.compile("^[\\w@#$%^&*()_+-=.]{6,16}$");
+        Pattern regex = Pattern.compile("^[\\w@#$%^&*()_+-=.]{6,30}$");
         Matcher matcher = regex.matcher(password);
         boolean isMatched = matcher.matches();
         return isMatched;

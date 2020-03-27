@@ -1,0 +1,7 @@
+From hub.c.163.com/library/java:8-jre
+
+ADD target/*.jar basicweb-service.jar
+
+EXPOSE 9966
+
+ENTRYPOINT ["java", "-jar", "basicweb-service.jar"]

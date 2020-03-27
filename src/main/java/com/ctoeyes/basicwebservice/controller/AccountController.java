@@ -18,7 +18,7 @@ public class AccountController extends BaseController{
     /**
       注册
      */
-    @RequestMapping(value="/register", method = RequestMethod.POST)
+    @PostMapping(value="/register")
     public Response register(@RequestBody AccountEntity account, HttpServletResponse response) {
         return accountService.register(account);
     }
@@ -26,7 +26,7 @@ public class AccountController extends BaseController{
     /**
       登录
     */
-    @RequestMapping(value="/login", method = RequestMethod.POST)
+    @PostMapping(value="/login")
     public Response login(@RequestBody AccountEntity account, HttpServletResponse response) {
         return accountService.login(account);
     }
